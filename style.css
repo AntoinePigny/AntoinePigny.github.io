@@ -1,0 +1,168 @@
+/**Table des matières des styles
+
+
+font-family: 'Pacifico', cursive;
+font-family: 'Handlee', cursive;
+font-family: 'Hind Siliguri', sans-serif;
+
+
+
+ * Table of Contents:
+ *
+ * 1.0 - Repeatable Patterns
+ * 2.0 - Typography
+ *   2.1 - Size rem
+ * 3.0 - Basic Structure
+ * 4.0 - Header
+ * 5.0 - Navigation
+ * 6.0 - Content
+ *   6.1 - Post Thumbnail
+ *   6.2 - Entry Header
+ *   6.3 - Entry Meta
+ *   6.4 - Entry Content
+ *   6.5 - Galleries
+ *   6.6 - Post Formats
+ *   6.7 - Post/Image/Paging Navigation
+ *   6.8 - Attachments
+ *   6.9 - Archives
+ *   6.10 - Contributor Page
+ *   6.11 - 404 Page
+ *   6.12 - Full-width
+ *   6.13 - Singular
+ *   6.14 - Comments
+ * 7.0 - Sidebar
+ *   7.1 - Widgets
+ *   7.2 - Content Sidebar Widgets
+ * 8.0 - Footer
+ * 9.0 - Featured Content
+ * 10.0 - Multisite
+ * 11.0 - Media Queries
+ * -----------------------------------------------------------------------------
+ .ct-off white {
+   stroke: #F6F4F2 !important; }
+
+ .ct-rosewood light {
+   stroke: #B58988 !important; }
+
+ .ct-rosewood grey {
+   stroke: #AE8C8E !important; }
+
+ .ct-purple {
+   stroke: #805D6F !important; }
+
+ .ct-bordeaux {
+   stroke: #7E3A47 !important; }
+
+ */
+/*******************************************/
+/********* 1.0 Repeatable Patterns *********/
+/*******************************************/
+
+.hvr-sweep-to-bottom {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-bottom:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #B58988;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active {
+  color: #7E3A47;
+}
+.hvr-sweep-to-bottom:hover:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+/*******************************************/
+/*********       4.0 Header        *********/
+/*******************************************/
+body {
+  margin: 0;
+  background-color: #f6f4f2;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%237e3a47' fill-opacity='0.35' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  height: 100vh;
+  background: fixed;
+}
+.font-header {
+  font-family: 'Pacifico', cursive;
+}
+ .name {
+   font-size: 50px;
+   padding: 0px 21px 9px 12px;
+   color: #7E3A47;
+   background: #f6f4f2;
+   border: 1px solid #7E3A47;
+ }
+
+
+.font-title {
+  font-family: 'Handlee', cursive;
+}
+
+.font-content {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.topnav {
+    background-color: #7E3A47;
+    overflow: hidden;
+    position: sticky;
+    top: 0px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.hvr-sweep-to-bottom:active {
+  background-color: #B58988;
+  color: #7E3A47;
+}
+
+section {
+  height: 100vh;
+  background-color: #F9F9F9;
+}
