@@ -70,7 +70,11 @@ font-family: 'Hind Siliguri', sans-serif;
 
  .flex-container {
    display: flex;
-   justify-content: center;
+   justify-content: space-around;
+ }
+
+ .flex-wrap {
+   flex-wrap: wrap;
  }
 
  .font-title {
@@ -184,10 +188,15 @@ header {
 /*******************************************/
 
 .infos-persos {
-  max width: 50%
 }
 
 .profile-pic {
-  max-width: 25%;
+  margin-top: 10vh;
   border-radius: 50%;
+  max width: 50%;
+
+}
+
+.renseignements {
+  max-width: 75%;
 }
