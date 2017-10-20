@@ -2,7 +2,7 @@
 
 
 font-family: 'Pacifico', cursive;
-font-family: 'Handlee', cursive;
+font-family: 'Cutive', serif;
 font-family: 'Hind Siliguri', sans-serif;
 
 
@@ -65,10 +65,23 @@ font-family: 'Hind Siliguri', sans-serif;
 
  section {
    height: 100vh;
-   background-color: #F9F9F9;
+   background-color: #F6F4F2;
  }
 
+ article {
+   background-color: #F6F4F2;
+ }
+.flex-article {
+  display: flex;
+  flex-direction: column;
+}
  .flex-container {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+ }
+
+ .flex-container-list {
    display: flex;
    justify-content: space-around;
  }
@@ -78,13 +91,34 @@ font-family: 'Hind Siliguri', sans-serif;
  }
 
  .font-title {
-   font-family: 'Handlee', cursive;
+   font-family: 'Cutive', serif;
+   font-size: 25px;
  }
 
  .font-content {
    font-family: 'Hind Siliguri', sans-serif;
  }
 
+ .margin-top-zero{
+   margin-top: 0;
+ }
+ .color-icon {
+   color: #805D6F;
+ }
+
+ .list-default {
+   padding-left: 0;
+   list-style: none;
+   font-weight: 700;
+ }
+
+.text-center{
+  text-align: center;
+}
+
+.height33 {
+  height: 33%;
+}
 /*******************************************/
 /*********       4.0 Header        *********/
 /*******************************************/
@@ -102,11 +136,12 @@ header {
   align-items: center;
 }
  .name {
-   font-size: 50px;
-   padding: 0px 21px 9px 12px;
+   font-size: 78px;
+   padding: 10px 40px 19px 31px;
    color: #7E3A47;
    background: #f6f4f2;
    border: 1px solid #7E3A47;
+   text-align: center;
  }
 
 /*******************************************/
@@ -187,16 +222,41 @@ header {
 /*********       6.1 Infos         *********/
 /*******************************************/
 
-.infos-persos {
-}
 
 .profile-pic {
   margin-top: 10vh;
   border-radius: 50%;
-  max width: 50%;
-
+  width: 280px;
+  /*min-width: 300px;*/
+  height: 280px;
 }
 
-.renseignements {
-  max-width: 75%;
+
+.responsive-col {
+  width: 50%;
+  min-width: 300px;
+}
+
+/*******************************************/
+/*********       8.0 Footer        *********/
+/*******************************************/
+footer{
+  height: 30vh;
+}
+.footer-bg {
+  background: #805D6F;
+}
+
+
+/*******************************************/
+/*********    11.0 Media Queries   *********/
+/*******************************************/
+
+@media screen and (max-width:660px){
+  .name{
+    margin-left: 2%;
+    margin-right: 2%;
+
+  }
+
 }
