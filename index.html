@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Portfolio v1</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cutive|Hind+Siliguri:400,700|Pacifico" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio v1</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Cutive|Hind+Siliguri:400,700|Pacifico" rel="stylesheet">
 
 
-  </head>
-  <body>
-    <header class="flex-header">
-      <p class="name font-header">
+</head>
+<body>
+  <header class="flex-header">
+    <p class="name font-header">
       Antoine Pigny
     </p>
-    </header>
-    <main>
-      <div class="topnav font-content" id="myTopnav">
-        <a class="hvr-sweep-to-bottom" href="#about">Moi, moi-même & je</a>
-        <a class="hvr-sweep-to-bottom" href="#work">Mon travail</a>
-        <a class="hvr-sweep-to-bottom" href="#contact">Contact</a>
-      </div>
-      <div class="flex-article">
+  </header>
+  <main>
+    <div class="topnav font-content" id="myTopnav">
+      <a class="hvr-sweep-to-bottom" href="#about">Moi, moi-même & je</a>
+      <a class="hvr-sweep-to-bottom" href="#work">Mon travail</a>
+      <a class="hvr-sweep-to-bottom" href="#contact">Contact</a>
+    </div>
+    <div class="content-width">
 
-      <article class="flex-container flex-wrap" id="about">
+    <div class="flex-article" id="about">
+      <div class="over-heading text-center">
+        <h3 class="margin-bottom-zero">A propos</h3>
+        <hr>
+      </div>
+      <article class="flex-container flex-wrap">
         <div class="flex-container responsive-col">
           <img class="profile-pic" src="images/matete.jpg" alt="Moi !">
         </div>
         <div class="responsive-col font-content">
-          <h3 class="font-title text-center">Compétences</h3>
+          <h3 class="heading text-center">Compétences</h3>
+          <hr>
           <div class="flex-container-list">
             <ul class="list-default">
               <li><i class="fa fa-check-circle-o fa-2x color-icon" aria-hidden="true"></i> HTML 5</li>
@@ -46,7 +52,8 @@
       </article>
       <article class="flex-article">
         <div class="">
-          <h3 class="font-title text-center margin-h3">Mais, à part le web ?</h3>
+          <h3 class="text-center heading">Mais, à part le web ?</h3>
+          <hr>
           <ul class="flex-container-list list-default font-content flex-wrap">
             <li><i class="fa fa-globe fa-2x color-icon" aria-hidden="true"></i> Anglais Bilingue</li>
             <li><i class="fa fa-video-camera fa-2x color-icon" aria-hidden="true"></i> Premiere</li>
@@ -55,25 +62,35 @@
             <li><i class="fa fa-motorcycle fa-2x color-icon" aria-hidden="true"></i> Aspirant Cascadeur en mini moto</li>
           </ul>
         </div>
-        <div class="">
-          <h3 class="font-title text-center margin-h3">Wow, mini moto, vraiment ???</h3>
+        <div>
+          <h3 class="text-center heading">Wow, mini moto, vraiment ???</h3>
+          <hr>
           <p class="font-content text-center">Si seulement ...</p>
         </div>
         <div class="height33">
+          <h3 class="text-center heading">Et si tu nous parlais de toi ?</h3>
+          <hr>
+          <p class="font-content text-center side">Je m'appelle Antoine, j'ai 27 ans, et j'habite à <span class="emphasis-content">Lyon</span>. Passionné par la création artistique et les technologies du web, j'ai découvert le développement web et j'ai décidé d'en faire mon métier. Dans un premier temps je me suis documenté, et maintenant je suis une formation de <span class="emphasis-content">développeur web et mobile</span> chez <span class="emphasis-content">IT-Akademy</span> depuis octobre 2017.</p>
 
         </div>
-
       </article>
     </div>
+    <section id="work">
+      <div class="over-heading text-center">
+        <h3 class="margin-bottom-zero">Mon Travail</h3>
+        <hr>
+      </div>
+      <article class="flex-container">
 
-      <section id="work">
+      </article>
 
 
-      </section>
-    </main>
-    <footer class="footer-bg" id="contact">
+    </section>
+    </div>
+  </main>
+  <footer class="footer-bg" id="contact">
 
-    </footer>
+  </footer>
   <script src="https://use.fontawesome.com/6a2d4cc44a.js"></script>
-  </body>
+</body>
 </html>

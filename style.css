@@ -1,12 +1,6 @@
 /**Table des matières des styles
 
 
-font-family: 'Pacifico', cursive;
-font-family: 'Cutive', serif;
-font-family: 'Hind Siliguri', sans-serif;
-
-
-
  * Table of Contents:
  *
  * 1.0 - Repeatable Patterns
@@ -17,7 +11,7 @@ font-family: 'Hind Siliguri', sans-serif;
  * 5.0 - Navigation
  * 6.0 - Content
  *   6.1 - Infos Persos
- *   6.2 - Entry Header
+ *   6.2 - Mon travail
  *   6.3 - Entry Meta
  *   6.4 - Entry Content
  *   6.5 - Galleries
@@ -62,15 +56,22 @@ font-family: 'Hind Siliguri', sans-serif;
    background-color: #f6f4f2;
    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%237e3a47' fill-opacity='0.35' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E");
  }
-
+ main {
+   background-color: #F6F4F2;
+ }
  section {
    height: 100vh;
-   background-color: #F6F4F2;
  }
 
- article {
-   background-color: #F6F4F2;
+ hr {
+   max-width: 300px;
+   border-top: 1px solid #7E3A47;
+
  }
+.content-width {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 .flex-article {
   display: flex;
   flex-direction: column;
@@ -79,20 +80,16 @@ font-family: 'Hind Siliguri', sans-serif;
    display: flex;
    justify-content: space-around;
    align-items: center;
- }
+   }
 
  .flex-container-list {
    display: flex;
    justify-content: space-around;
+
  }
 
  .flex-wrap {
    flex-wrap: wrap;
- }
-
- .font-title {
-   font-family: 'Cutive', serif;
-   font-size: 25px;
  }
 
  .font-content {
@@ -102,6 +99,15 @@ font-family: 'Hind Siliguri', sans-serif;
  .margin-top-zero{
    margin-top: 0;
  }
+
+ .margin-bottom-zero{
+   margin-bottom: 0;
+ }
+
+ .side-margin {
+   margin-left: 3%;
+   margin-right: 3%;
+ }
  .color-icon {
    color: #805D6F;
  }
@@ -110,6 +116,7 @@ font-family: 'Hind Siliguri', sans-serif;
    padding-left: 0;
    list-style: none;
    font-weight: 700;
+   margin-top: 40px;
  }
 
 .text-center{
@@ -119,6 +126,22 @@ font-family: 'Hind Siliguri', sans-serif;
 .height33 {
   height: 33%;
 }
+
+.emphasis-content {
+  font-weight: 700;
+  color: #B58988;
+}
+/*******************************************/
+/*********     2.0 Typography      *********/
+/*******************************************/
+
+/*
+font-family: 'Pacifico', cursive;
+font-family: 'Cutive', serif;
+font-family: 'Hind Siliguri', sans-serif;
+*/
+
+
 /*******************************************/
 /*********       4.0 Header        *********/
 /*******************************************/
@@ -141,6 +164,8 @@ header {
    color: #7E3A47;
    background: #f6f4f2;
    border: 1px solid #7E3A47;
+   text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+   box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.3);
    text-align: center;
  }
 
@@ -153,6 +178,7 @@ header {
     overflow: hidden;
     position: sticky;
     top: 0px;
+    width: 100%;
 }
 
 .topnav a {
@@ -229,6 +255,8 @@ header {
   width: 280px;
   /*min-width: 300px;*/
   height: 280px;
+  box-shadow: 4px 0px 7px rgba(0, 0, 0, 0.3);
+
 }
 
 
@@ -237,9 +265,27 @@ header {
   min-width: 300px;
 }
 
-.margin-h3 {
-  margin-top: 40px;
-  margin-bottom: 40px;
+.heading {
+  margin-top: 0;
+  padding-top: 40px;
+  margin-bottom: 25px;
+  font-family: 'Cutive', serif;
+  font-size: 25px;
+}
+
+/*******************************************/
+/*********     6.2 Mon Travail     *********/
+/*******************************************/
+
+.over-heading {
+  margin-top: 0;
+  padding-top: 40px;
+  margin-bottom: 0;
+  font-family: 'Cutive', serif;
+  font-size: 44px;
+  color: #AE8C8E;
+  background-color: #F6F4F2;
+
 }
 
 /*******************************************/
