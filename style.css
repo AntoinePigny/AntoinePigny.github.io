@@ -41,7 +41,7 @@ stroke: #FEC0AA !important; }
 .ct-greenery main {
 stroke: #B00B1E !important; }
 
-.ct-accent café {
+.ct-accent orange {
 stroke: #F64740 !important; }
 
 .ct-dark {
@@ -165,7 +165,6 @@ header {
 .flex-header {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -580,5 +579,22 @@ header {
     margin-right: 2%;
     font-size: 75px;
   }
+  .first-link {
+    margin-top: 0;
+  }
 
+}
+
+@media screen and (orientation:landscape) {
+  .name {
+    margin-bottom: 25px;
+  }
+  .first-link {
+    margin-top: 0;
+    padding-right: 27px;
+  }
+
+  .hvr-icon-hang::before {
+    position: static;
+  }
 }
